@@ -1,0 +1,1486 @@
+<html manifest="/remove-appcache-1.appcache" class="k-webkit k-webkit87">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <title>KiotViet - Phòng/Bàn</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn-app.kiotviet.vn/fnb/bundles/20201214910/kiotviet.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body kv-body="" class="ng-scope">
+    <div class="zopim" __jx__id="___$_11 ___$_11"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 180px; height: 30px; right: 10px; bottom: 0px;"
+        data-test-id="ChatWidgetButton"><iframe frameborder="0"
+            style="background-color: transparent; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"
+            src="about:blank" data-test-id="ChatWidgetButton-iframe" title="Zendesk Chat widget button"></iframe></div>
+    <div class="zopim" __jx__id="___$_4 ___$_4"
+        style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;"
+        data-test-id="ChatWidgetWindow"><iframe frameborder="0"
+            style="background-color: transparent;  position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;"
+            src="about:blank" data-test-id="ChatWidgetWindow-iframe" title="Zendesk Chat widget window"></iframe></div>
+
+    <input type="password" style="display:none">
+
+    <input type="text" style="height:0.01px ;margin-top: -500px; position: absolute">
+
+    <kv-expire-message>
+        <!-- ngIf: showExpireMessage.isActive -->
+    </kv-expire-message>
+    <div id="LoadingPanel" class="loading" style="display:none;"></div>
+    <div class="mainWrap">
+        <header class="mainHeader clearfix posR ng-scope" ng-controller="HeaderCtrl">
+            <div class="box-introduce-app box-introduce-android">
+                <div class="box-introduce-app-android introduce-app">
+                    <a class="btn-close-app fl"><img src="/Content/retailer/img/close-1024.jpg" alt=""></a>
+                    <div class="fl introduce-app-left">
+                        <a href="https://play.google.com/store/apps/details?id=net.citigo.kiotviet.fnb.manager&amp;hl=en"
+                            class="ipad"><img src="/Content/retailer/img/banner-1024-pos.svg" alt=""></a>
+                        <a href="https://play.google.com/store/apps/details?id=net.citigo.kiotviet.fnb.manager&amp;hl=en"
+                            class="mobile-icon"><img src="/Content/retailer/img/Banner_android_web-480.jpg" alt=""></a>
+                        <div class="btn-introduce-app">
+                            <a href="https://play.google.com/store/apps/details?id=net.citigo.kiotviet.fnb.manager&amp;hl=en"
+                                target="_blank" class="btn-download fl">Tải ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-introduce-app box-introduce-ios">
+                <div class="box-introduce-app-ios introduce-app">
+                    <a class="btn-close-app fl"><img src="/Content/retailer/img/close-1024.jpg" alt=""></a>
+                    <div class="fl introduce-app-left">
+                        <a href="https://apps.apple.com/us/app/kiotviet-qu%E1%BA%A3n-l%C3%BD-nh%C3%A0-h%C3%A0ng/id1421096863"
+                            class="ipad"><img src="/Content/retailer/img/banner-1024-pos.svg" alt=""></a>
+                        <a href="https://apps.apple.com/us/app/kiotviet-qu%E1%BA%A3n-l%C3%BD-nh%C3%A0-h%C3%A0ng/id1421096863"
+                            class="mobile-icon"><img src="/Content/retailer/img/Banner_android_web-480.jpg" alt=""></a>
+                        <div class="btn-introduce-app">
+                            <a href="https://apps.apple.com/us/app/kiotviet-qu%E1%BA%A3n-l%C3%BD-nh%C3%A0-h%C3%A0ng/id1421096863"
+                                target="_blank" class="fl">Tải ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="container">
+                <a href="javascript:;" class="mobileMenu"><span></span></a>
+                <a href="#" class="dpib ovh logo" tabindex="-1">
+                    <img src="https://fnb.kiotviet.vn/Content/img/kiotvietLogo.png" alt="KiotViet" title="KiotViet">
+                </a>
+                <section class="user uln posR flr" style="padding-top: 10px;">
+                    <a href="javascript:void(0)" class="dpib userName"><span class="ng-binding">0123456789</span> <i
+                            class="fas fa-user-circle"></i></a>
+                    <ul ng-show="showUserMenu">
+                        <li><a ng-click="EditProfile()" class="ng-binding"><i class="fas fa-user-circle fa-fw"></i> Tài
+                                khoản</a></li>
+                        <li ng-show="_p.has('ViewPaymentGateway')" class="ng-hide"><a
+                                ng-href="/wqdqwdwqdqdqwdwdwqdw/#/PaymentGateway"
+                                href="/wqdqwdwqdqdqwdwdwqdw/#/PaymentGateway"><i class="fa fa-dollar-sign"></i> Quản lý
+                                thanh toán QR</a>
+                        </li>
+                        <li><a ng-click="logout()" class="ng-binding"><i class="far fa-sign-out fa-fw"></i> Đăng
+                                xuất</a></li>
+                    </ul>
+                </section>
+                <section class="settingNav topNav posR uln flr" style="padding-top: 10px;">
+                    <ul>
+                        <li class="setting">
+                            <span class="show-mobile"><i class=" fal fa-remove"></i></span>
+                            <a href="javascript:void(0)"><span class="hide-mobile ng-binding">Thiết lập</span><span
+                                    class="show-mobile account-name"><b class="ng-binding">0123456789</b><i
+                                        class="fas fa-user"></i></span><i class="hide-mobile fas fa-cog"></i></a>
+                            <ul style="display: none;">
+                                <li class="show-mobile title-menu"><a><b class="ng-binding"><i class="fa fa-user"></i>
+                                            0123456789</b></a></li>
+                                <li class="show-mobile"><a ng-click="EditProfile()"><i class="fa fa-unlock-alt"></i> Tài
+                                        khoản</a></li>
+                                <li ng-show="_p.has('ViewPaymentGateway')" class="show-mobile ng-hide"><a
+                                        ng-href="/wqdqwdwqdqdqwdwdwqdw/#/PaymentGateway"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/PaymentGateway"><i class="fa fa-dollar-sign"></i>
+                                        Quản lý thanh toán QR</a></li>
+                                <!-- ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/PosParameter/"
+                                        address="PosParameter" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/PosParameter/"><i class="fa-fw far fa-wrench"></i>
+                                        Thiết lập cửa hàng</a></li><!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/PrintTemplates/"
+                                        address="PrintTemplates" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/PrintTemplates/"><i
+                                            class="fa-fw far fa-shredder"></i> Quản lý mẫu in</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/Users/"
+                                        address="Users" class="ng-binding" href="/wqdqwdwqdqdqwdwdwqdw/#/Users/"><i
+                                            class="fa-fw far fa-file-user"></i> Quản lý người dùng</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/Branches/"
+                                        address="Branches" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/Branches/"><i
+                                            class="fa-fw far fa-map-marker-check"></i> Quản lý chi nhánh</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/CancelDishReason/"
+                                        address="CancelDishReason" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/CancelDishReason/"><i
+                                            class="fa-fw far fa-user-cog"></i> Quản lý lý do hủy món</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/NoteTemplate/"
+                                        address="NoteTemplate" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/NoteTemplate/"><i
+                                            class="fa-fw far fa-comment-alt-edit"></i> Quản lý ghi chú món</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="/wqdqwdwqdqdqwdwdwqdw/#/AuditTrail/"
+                                        address="AuditTrail" class="ng-binding"
+                                        href="/wqdqwdwqdqdqwdwdwqdw/#/AuditTrail/"><i class="fa-fw fas fa-history"></i>
+                                        Lịch sử thao tác</a></li><!-- end ngRepeat: m in settingMenu -->
+                                <li ng-show="showSetting" ng-repeat="m in settingMenu" class="ng-scope"><a
+                                        ng-click="showSupport(m)" ng-href="" address="" class="ng-binding"><i
+                                            class="fa-fw  far fa-trash-alt"></i> Xóa dữ liệu dùng thử</a></li>
+                                <!-- end ngRepeat: m in settingMenu -->
+                                <li class="show-mobile"><a ng-click="logout()"><i class="far fa-sign-out fa-fw"></i>
+                                        Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="topNav posR flr uln" style="padding-top: 10px;">
+                    <ul>
+                        <li class="txt-cd">
+                            <a href="javascript:void(0)"><i class="far fa-palette"></i> Chủ đề </a>
+                            <div class="box-cd theme-colors">
+                                <ul style="display: none;">
+                                    <li><a href="" class="box-cd-cl box-cd-color-df active-ic-cd" color="color-df"
+                                            ng-click="changeTheme('color-df')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color1" color="color1"
+                                            ng-click="changeTheme('color1')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color2" color="color2"
+                                            ng-click="changeTheme('color2')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color3" color="color3"
+                                            ng-click="changeTheme('color3')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color4" color="color4"
+                                            ng-click="changeTheme('color4')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color5" color="color5"
+                                            ng-click="changeTheme('color5')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color6" color="color6"
+                                            ng-click="changeTheme('color6')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color7" color="color7"
+                                            ng-click="changeTheme('color7')"></a></li>
+                                    <li><a href="" class="box-cd-cl box-cd-color8" color="color8"
+                                            ng-click="changeTheme('color8')"></a></li>
+                                </ul>
+                            </div>
+                            <!--End-box-cd-->
+                        </li>
+                        <li><a href="https://kiotviet.vn/ho-tro/?type=fnb" target="_blank"><i
+                                    class="far fa-comment-exclamation"></i> Hỗ trợ </a></li>
+                        <li class="txt-cd support_tool_download">
+                            <a href="javascript:void(0)"><i class="far fa-arrow-to-bottom"></i> Tải công cụ hỗ trợ </a>
+                            <div class="box-cd support_tool_download">
+                                <ul style="display: none;">
+                                    <li><a href="https://get.teamviewer.com/kiotviet18006162" target="_blank"
+                                            title="Công cụ hỗ trợ từ xa TeamViewer"><span><img
+                                                    src="/Content/retailer/img/teamview.svg" alt=""></span>
+                                            TeamViewer</a></li>
+                                    <li><a href="https://ultraviewer.net/vi/UltraViewer_setup_6.2_vi.exe"
+                                            target="_blank" title="Công cụ hỗ trợ từ xa UltraViewer"><span><img
+                                                    src="/Content/retailer/img/ultra.svg" alt=""></span> UltraViewer</a>
+                                    </li>
+                                    <li><a href="https://download.anydesk.com/AnyDesk.exe" target="_blank"
+                                            title="Công cụ hỗ trợ từ xa AnyDesk"><span class="anydesk"><img
+                                                    src="/Content/retailer/img/any.svg" alt=""></span> AnyDesk</a></li>
+                                    <!-- ngIf: !ConnectAppDownload -->
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ngIf: !ConnectAppDownload -->
+                        <!-- ngIf: ConnectAppDownload -->
+                        <li class="link-app ng-scope" ng-if="ConnectAppDownload"><a
+                                href="https://s3south.storage.com.vn/kiotviet-ketnoi/app-ketnoi/KiotViet_Ketnoi.exe"
+                                target="_blank" class="d-flex icon-img"><span class="img"><img
+                                        src="https://fnb.kiotviet.vn/Content/retailer/img/app-ketnoi.svg"
+                                        alt=""></span><span class="text"> Tải
+                                    KiotViet kết nối</span></a></li><!-- end ngIf: ConnectAppDownload -->
+                        <!-- ngIf: isUsingNewFnB -->
+                        <!-- ngIf: isUsingNewFnB -->
+
+                    </ul>
+                </section>
+            </section>
+
+            <nav class="mainNav w100 fll uln off-menu">
+                <section class="container">
+                    <!-- note: the trailing forward slash is important to make it refresh on click-->
+                    <ul class="menu">
+                        <!-- ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}" class="ng-scope">
+                            <a ng-href="/quannhaureswqqwqwqw/#/DashBoard/"
+                                ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"
+                                href="/quannhaureswqqwqwqw/#/DashBoard/"><i class="fas fas fa-eye"></i>
+                                <!-- ngIf: m.displayForTrial -->Tổng quan</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope ng-hide" ng-hide="!m.sub"
+                                ng-if="!(m.Id == 7 &amp;&amp; hideReport)">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}"
+                            class="ng-scope has-child">
+                            <a ng-href="" href="insertTable copy.html"
+                                ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"><i class="fas fas fa-cube"></i>
+                                <!-- ngIf: m.displayForTrial -->Hàng hóa</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope" ng-hide="!m.sub" ng-if="!(m.Id == 7 &amp;&amp; hideReport)"
+                                style="display: none;">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/Products/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/Products/"><i
+                                            class="fa-fw fa fa-th"></i>Danh mục</a><!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/PriceBook/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/PriceBook/"><i
+                                            class="fa-fw fa fa-tags"></i>Thiết lập giá</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/StockTakes/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/StockTakes/"><i
+                                            class="fa-fw fas fa-clipboard-check"></i>Kiểm kho</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}" class="ng-scope active">
+                            <a ng-href="/quannhaureswqqwqwqw/#/TableAndRoom/"
+                                ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding active"
+                                href="/quannhaureswqqwqwqw/#/TableAndRoom/"><i class="fas fa fa-table"></i>
+                                <!-- ngIf: m.displayForTrial -->Phòng/Bàn</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope ng-hide" ng-hide="!m.sub"
+                                ng-if="!(m.Id == 7 &amp;&amp; hideReport)">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}"
+                            class="ng-scope has-child">
+                            <a ng-href="" ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"><i class="fas fas fa-exchange"></i>
+                                <!-- ngIf: m.displayForTrial -->Giao dịch</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope" ng-hide="!m.sub" ng-if="!(m.Id == 7 &amp;&amp; hideReport)"
+                                style="display: none;">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/Invoices/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/Invoices/"><i
+                                            class="fa-fw fas fa-file-invoice-dollar"></i>Hóa đơn</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/Returns/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/Returns/"><i
+                                            class="fa-fw fa fa-reply-all"></i>Trả hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/PurchaseOrder/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/PurchaseOrder/"><i
+                                            class="fa-fw fas fa-dolly-flatbed-alt"></i>Nhập hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/PurchaseReturns/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/PurchaseReturns/"><i
+                                            class="fa-fw fas fa-inbox-out"></i>Trả hàng nhập</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/DamageItems/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/DamageItems/"><i
+                                            class="fa-fw fas fa-hand-holding-box"></i>Xuất hủy</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}"
+                            class="ng-scope has-child">
+                            <a ng-href="" ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"><i class="fas fas fa-user-tie"></i>
+                                <!-- ngIf: m.displayForTrial -->Đối tác</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope" ng-hide="!m.sub" ng-if="!(m.Id == 7 &amp;&amp; hideReport)"
+                                style="display: none;">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/Customers/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/Customers/"><i
+                                            class="fa-fw fas fa-user-alt"></i>Khách hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/Suppliers/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/Suppliers/"><i
+                                            class="fa-fw fas fa-users-class"></i>Nhà cung cấp</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}"
+                            class="ng-scope has-child">
+                            <a ng-href="" ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"><i
+                                    class="fas fas fa-user-friends"></i><!-- ngIf: m.displayForTrial --><label
+                                    class="badge new ng-scope" ng-if="m.displayForTrial">New</label>
+                                <!-- end ngIf: m.displayForTrial -->Nhân viên</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope" ng-hide="!m.sub" ng-if="!(m.Id == 7 &amp;&amp; hideReport)"
+                                style="display: none;">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial --><a ng-if="m.displayForTrial"
+                                        ng-click="activeTimeSheetTrial(s.link);" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope"><i class="fa-fw fas fa-user-friends"></i>Nhân
+                                        viên</a><!-- end ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial --><a ng-if="m.displayForTrial"
+                                        ng-click="activeTimeSheetTrial(s.link);" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope"><i class="fa-fw fas fa-calendar-alt"></i>Chấm
+                                        công</a><!-- end ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial --><a ng-if="m.displayForTrial"
+                                        ng-click="activeTimeSheetTrial(s.link);" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope"><i class="fa-fw fas fa-coins"></i>Bảng tính
+                                        lương</a><!-- end ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial --><a ng-if="m.displayForTrial"
+                                        ng-click="activeTimeSheetTrial(s.link);" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope"><i class="fa-fw fas fa-sack-dollar"></i>Thiết lập
+                                        hoa hồng</a><!-- end ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}" class="ng-scope">
+                            <a ng-href="/quannhaureswqqwqwqw/#/CashFlow/"
+                                ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"
+                                href="/quannhaureswqqwqwqw/#/CashFlow/"><i class="fas fas fa-usd-circle"></i>
+                                <!-- ngIf: m.displayForTrial -->Sổ quỹ</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope ng-hide" ng-hide="!m.sub"
+                                ng-if="!(m.Id == 7 &amp;&amp; hideReport)">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                        <li ng-repeat="m in menus track by m.Id" ng-class="{active:m.selected}"
+                            class="ng-scope has-child">
+                            <a ng-href="" ng-click="showReportPopup((m.Id == 7 &amp;&amp; hideReport))"
+                                ng-class="{active:m.selected}" class="ng-binding"><i class="fas fas fa-analytics"></i>
+                                <!-- ngIf: m.displayForTrial -->Báo cáo</a>
+                            <!-- ngIf: !(m.Id == 7 && hideReport) -->
+                            <ul class="sub ng-scope" ng-hide="!m.sub" ng-if="!(m.Id == 7 &amp;&amp; hideReport)"
+                                style="display: none;">
+                                <!-- ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/EndOfDayReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/EndOfDayReport/"><i
+                                            class="fa-fw fa fa-pie-chart"></i>Cuối ngày</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/SaleReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/SaleReport/"><i
+                                            class="fa-fw fas fa-paste"></i>Bán hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/ProductReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/ProductReport/"><i
+                                            class="fa-fw fa fa-cube"></i>Hàng hóa</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/CustomerReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/CustomerReport/"><i
+                                            class="fa-fw fas fa-user-alt"></i>Khách hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/SupplierReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/SupplierReport/"><i
+                                            class="fa-fw fas fa-users-class"></i>Nhà cung cấp</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/UserReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/UserReport/"><i
+                                            class="fa-fw fas fa-id-badge"></i>Nhân viên</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/SaleChannelReport/"
+                                        ng-class="{active:s.selected}" class="ng-binding ng-scope"
+                                        href="/quannhaureswqqwqwqw/#/SaleChannelReport/"><i
+                                            class="fa-fw fa fa-slideshare"></i>Kênh bán hàng</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                                <li ng-repeat="s in m.sub track by s.Id" class="ng-scope">
+                                    <!-- ngIf: !m.displayForTrial --><a ng-if="!m.displayForTrial"
+                                        ng-href="/quannhaureswqqwqwqw/#/FinancialReport/" ng-class="{active:s.selected}"
+                                        class="ng-binding ng-scope" href="/quannhaureswqqwqwqw/#/FinancialReport/"><i
+                                            class="fa-fw fa fa-line-chart"></i>Tài chính</a>
+                                    <!-- end ngIf: !m.displayForTrial -->
+                                    <!-- ngIf: m.displayForTrial -->
+                                </li><!-- end ngRepeat: s in m.sub track by s.Id -->
+                            </ul><!-- end ngIf: !(m.Id == 7 && hideReport) -->
+
+                        </li><!-- end ngRepeat: m in menus track by m.Id -->
+                    </ul>
+                    <ul class="menu menu-right">
+                        <li class="shortcut ng-hide"
+                            ng-show="( _p.has('Invoice_Create') || _p.has('Order_Create') || _p.has('Return_Create') ) &amp;&amp;!isCoffeeScreen">
+                            <a ng-href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/" title="Bán hàng"
+                                href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/"><i
+                                    class="fas fa-file-edit"></i><span class="ng-binding">Bán hàng</span></a>
+                        </li>
+                        <li class="shortcut saleCheft"
+                            ng-show="_p.has('TableAndRoom_Kitchen')&amp;&amp; isCoffeeScreen"><a
+                                ng-href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/#/kitchen" title="Nhà bếp"
+                                href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/#/kitchen"><i
+                                    class="fas fa-concierge-bell"></i><span>Nhà bếp</span></a></li>
+                        <li class="shortcut" ng-show="_p.has('Reservation_Read')"><a
+                                ng-href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/#/reception" title="Lễ tân"
+                                href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/#/reception"><i
+                                    class="fas fa-calendar-check"></i><span>Lễ tân</span></a></li>
+                        <li class="shortcut"
+                            ng-show="(_p.has('Invoice_Create') || _p.has('TableAndRoom_Waiter')) &amp;&amp; isCoffeeScreen">
+                            <a ng-href="https://fnb.kiotviet.vn/quannhaureswqqwqwqw/pos/#/?source=fnb-manager"
+                                title="Thu ngân" href="table.html"><i class="fas fa-file-edit"></i><span>Thu
+                                    ngân</span></a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+            <div id="supportWindows" style="display:none;font-size:16px" class="k-grid-supportWindows">
+                <div class="support_delData">
+                    <p class="ng-binding"> Liên hệ Hotline 1900 6522 để xóa dữ liệu &amp; được tư vấn sử dụng. </p>
+                </div>
+            </div>
+
+
+            <div id="initialWindow" class="box-login-success">
+                <div class="box-login--left">
+                    <div class="box-login--left-header">
+                        <p class="box-icon"><i class="far fa-money-check-edit"></i></p>
+                        <h3 ng-bind="_l.initData_Label" class="ng-binding">Tạo dữ liệu mẫu</h3>
+                    </div>
+                    <div class="box-login--left-img">
+                        <img src="/Content/retailer/img/img_dk-demo.png" alt="">
+                    </div>
+                </div>
+                <div class="box-login--right">
+                    <h4><strong><span ng-bind="_l.initdata_Welcome" class="ng-binding">Chào mừng</span>
+                            <font color="#38b8e6" class="ng-binding">0123456789</font> <span
+                                ng-bind="_l.initdata_ComeTo" class="ng-binding">đã đến với</span> KiotViet.
+                        </strong></h4>
+
+                    <p><span ng-bind="_l.initdata_DescriptionPrefix" class="ng-binding">Vui lòng lựa chọn thông tin mô
+                            tả chính xác nhất để</span> KiotViet <span ng-bind="_l.initdata_DescriptionSuffix"
+                            class="ng-binding">thiết lập cửa hàng phù hợp với mô hình kinh doanh của bạn</span></p>
+
+                    <section ng-show="currentIndustryId != '15'" class="mb20">
+                        <span title="" class="k-widget k-dropdown k-header branchSelect form-dropdown" unselectable="on"
+                            role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                            aria-owns="cbIndustry_listbox" aria-disabled="false" aria-readonly="false" style=""><span
+                                unselectable="on" class="k-dropdown-wrap k-state-default"><span unselectable="on"
+                                    class="k-input ng-scope"></span><span unselectable="on" class="k-select"><span
+                                        unselectable="on" class="k-icon k-i-arrow-s">select</span></span></span><select
+                                id="cbIndustry" k-data-source="industryList" k-data-text-field="'Name'"
+                                k-data-value-field="'Id'" k-value-primitive="true" k-auto-bind="false"
+                                k-ng-model="currentIndustryId" k-filter="'contains'" kendo-drop-down-list=""
+                                class="branchSelect form-dropdown" data-role="dropdownlist"
+                                style="display: none;"></select></span>
+                    </section>
+
+                    <div class="form-group">
+                        <label class="control-label mb15 fs14 ng-binding" ng-bind="_l.initdata_WorkingTime">Thời gian
+                            hoạt động</label>
+                        <div class="form-wrap">
+                            <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                        kv-pretty-check="" name="workingTimeRadio" value="0"
+                                        kv-data-label="_l.initdata_NearOpen" ng-model="workingTime"
+                                        class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                        data-label="Sắp mở" style="display: none;"><a href="javascript:void(0)"
+                                        tabindex="0" class=""></a>
+                                    <label for="undefined" class="">Sắp mở</label>
+                                </div>
+                            </aside>
+                            <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                        kv-pretty-check="" name="workingTimeRadio" value="1"
+                                        kv-data-label="_l.initdata_LessThanOneYear" ng-model="workingTime"
+                                        class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                        data-label="< 1 năm" style="display: none;"><a href="javascript:void(0)"
+                                        tabindex="0" class=""></a>
+                                    <label for="undefined" class="">&lt; 1 năm</label>
+                                </div>
+                            </aside>
+                            <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                        kv-pretty-check="" name="workingTimeRadio" value="2"
+                                        kv-data-label="_l.initdata_FromOneToFiveYear" ng-model="workingTime"
+                                        class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                        data-label="1 - 5 năm" style="display: none;" checked="checked"><a
+                                        href="javascript:void(0)" tabindex="0" class="checked"></a>
+                                    <label for="undefined" class="checked">1 - 5 năm</label>
+                                </div>
+                            </aside>
+                            <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                        kv-pretty-check="" name="workingTimeRadio" value="3"
+                                        kv-data-label="_l.initdata_GreaterThanFiveYear" ng-model="workingTime"
+                                        class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                        data-label="Nhiều hơn 5 năm" style="display: none;"><a href="javascript:void(0)"
+                                        tabindex="0" class=""></a>
+                                    <label for="undefined" class="">Nhiều hơn 5 năm</label>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt30 mb15">
+                        <label class="control-label fs14 ng-binding" ng-bind="_l.initdata_BusinessModel">Mô hình bán
+                            hàng</label>
+                        <div class="form-wrap d-flex-start">
+                            <div class="col-one">
+                                <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                    <div class="clearfix prettycheckbox labelright  blue"><input type="checkbox"
+                                            kv-pretty-check="" name="businessModelRadio"
+                                            kv-data-label="_l.initdata_Retail" ng-model="businessRetail"
+                                            class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                            data-label="Nhà hàng/ Quán ăn" style="display: none;" checked="checked"><a
+                                            href="javascript:void(0)" tabindex="0" class="checked"></a>
+                                        <label for="undefined" class="checked">Nhà hàng/ Quán ăn</label>
+                                    </div>
+                                </aside>
+                                <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                    <div class="clearfix prettycheckbox labelright  blue"><input type="checkbox"
+                                            kv-pretty-check="" name="businessModelRadio"
+                                            kv-data-label="_l.initdata_OnlineSale" ng-model="businessOnline"
+                                            class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+                                            data-label="Karaoke/ Bida" style="display: none;"><a
+                                            href="javascript:void(0)" tabindex="0" class=""></a>
+                                        <label for="undefined" class="">Karaoke/ Bida</label>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div class="col-two">
+                                <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                    <div class="clearfix prettycheckbox labelright  blue"><input type="checkbox"
+                                            kv-pretty-check="" name="businessModelRadio"
+                                            kv-data-label="_l.initdata_WholeSale" ng-model="businessWholeSale"
+                                            class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+                                            data-label="Café/Trà sữa/Tiệm bánh" style="display: none;"><a
+                                            href="javascript:void(0)" tabindex="0" class=""></a>
+                                        <label for="undefined" class="">Café/Trà sữa/Tiệm bánh</label>
+                                    </div>
+                                </aside>
+
+                                <aside class="frRadioCheck frRadioCheckNormal has-pretty-child">
+                                    <div class="clearfix prettycheckbox labelright  blue"><input type="checkbox"
+                                            kv-pretty-check="" name="businessModelRadio"
+                                            kv-data-label="_l.initdata_SaleInStore" ng-model="businessStore"
+                                            class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+                                            data-label="Shop online" style="display: none;"><a href="javascript:void(0)"
+                                            tabindex="0" class=""></a>
+                                        <label for="undefined" class="">Shop online</label>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fs13 checkradio has-pretty-child">
+                        <div class="clearfix prettycheckbox labelright  blue"><input type="checkbox"
+                                ng-model="useSampleData" kv-change="filterbyProductType" kv-pretty-check=""
+                                kv-data-label="_l.initdata_UseSampleData + ' KiotViet ' + _l.initdata_FeaturesExperience"
+                                class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-empty"
+                                data-label="Sử dụng dữ liệu mẫu của KiotViet để trải nghiệm các tính năng"
+                                style="display: none;"><a href="javascript:void(0)" tabindex="0" class=""></a>
+                            <label for="undefined" class="">Sử dụng dữ liệu mẫu của KiotViet để trải nghiệm các tính
+                                năng</label>
+                        </div>
+                    </div>
+                    <div class="box-btn">
+                        <a ng-click="confirmIntitialData()" class="btn btn-success btn-box-success ng-binding"
+                            tabindex="-4"> Hoàn thành<i class="far fa-check"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="container main_wrapper">
+            <!-- ngView:  -->
+            <section class="clb main main-content ng-scope" ng-view="">
+                <section class="mainLeft proLeft fll ng-scope">
+                    <kv-table-filter>
+                        <article class="boxLeft uln sortTime proGroup sortView posR">
+                            <h3 class="leftTitle ng-binding">Nhóm <a ng-click="AddGroup(0)" href="javascript:void(0)"
+                                    class="showhideicon" title="Thêm nhóm phòng/bàn" ng-show="rights.canCreate"><i
+                                        class="far fa-plus-circle"></i></a></h3>
+                            <aside class="boxLeftC">
+                                <div class="form-group input-group"><span title=""
+                                        class="k-widget k-dropdown k-header form-control" unselectable="on"
+                                        role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                        aria-owns="" aria-disabled="false" aria-readonly="false" style=""
+                                        aria-busy="false"
+                                        aria-activedescendant="0a3590fc-d2b2-4e93-aa1b-fe60e6b60572"><span
+                                            unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                                                unselectable="on" class="k-input ng-scope">---Tất cả---</span><span
+                                                unselectable="on" class="k-select"><span unselectable="on"
+                                                    class="k-icon k-i-arrow-s">select</span></span></span><select
+                                            kendo-drop-down-list="ddlSelectGroup" k-ng-model="selectedGroupId"
+                                            class="form-control" k-options="comboGroup" data-role="dropdownlist"
+                                            style="display: none;">
+                                            <option value="0" selected="selected">---Tất cả---</option>
+                                            <option value="20820">Phòng VIP</option>
+                                            <option value="20821">Lầu 2</option>
+                                            <option value="20822">Lầu 3</option>
+                                        </select></span>
+                                    <div class="input-group-append"><a class="btn-icon ng-hide" ng-click="EditGroup()"
+                                            title="Sửa nhóm phòng/bàn"
+                                            ng-show="rights.canUpdate &amp;&amp; selectedGroupId"><i
+                                                class="far fa-pen"></i></a></div>
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="boxLeft uln leftStatus">
+                            <h3 class="leftTitle ng-binding">Tìm kiếm</h3>
+                            <aside class="boxLeftC">
+                                <div class="form-group"><input type="text" ng-model="keywordParam"
+                                        placeholder="Theo tên phòng/bàn"
+                                        class="form-control ng-pristine ng-untouched ng-valid ng-empty"
+                                        kv-select-text="" ng-keyup="$event.keyCode == 13 ? filterbyKeyword() : null">
+                                </div>
+                            </aside>
+                        </article>
+                        <article class="boxLeft uln leftStatus">
+                            <h3 class="leftTitle cursor ng-binding" ng-click="showStatus = !showStatus">Trạng thái <a
+                                    class="showhideicon"><i class="fa fa-chevron-circle-up"></i></a></h3>
+                            <aside class="boxLeftC" ng-hide="showStatus">
+                                <ul class="pretty-radio-mobile">
+                                    <li class="has-pretty-child">
+                                        <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                                kv-pretty-check="" name="StatusRadio" value="1"
+                                                kv-data-label="_l.user_Active" ng-model="statusFilter"
+                                                kv-change="filterbyStatus"
+                                                class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                                data-label="Đang hoạt động" style="display: none;" checked="checked"><a
+                                                href="javascript:void(0)" tabindex="0" class="checked"></a>
+                                            <label for="undefined" class="checked">Đang hoạt động</label>
+                                        </div>
+                                    </li>
+                                    <li class="has-pretty-child">
+                                        <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                                kv-pretty-check="" name="StatusRadio" value="2"
+                                                kv-data-label="_l.user_unActive" ng-model="statusFilter"
+                                                kv-change="filterbyStatus"
+                                                class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                                data-label="Ngừng hoạt động" style="display: none;"><a
+                                                href="javascript:void(0)" tabindex="0" class=""></a>
+                                            <label for="undefined" class="">Ngừng hoạt động</label>
+                                        </div>
+                                    </li>
+                                    <li class="has-pretty-child">
+                                        <div class="clearfix prettyradio labelright  blue"><input type="radio"
+                                                kv-pretty-check="" name="StatusRadio" value="0"
+                                                kv-data-label="_l.product_all" ng-model="statusFilter"
+                                                kv-change="filterbyStatus"
+                                                class="ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty"
+                                                data-label="Tất cả" style="display: none;"><a href="javascript:void(0)"
+                                                tabindex="0" class=""></a>
+                                            <label for="undefined" class="">Tất cả</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </article>
+                        <aside class="boxLeftC page-size" ng-show="viewtype == typeList"><label for=""
+                                class="ng-binding">Số bản ghi:</label><span title=""
+                                class="k-widget k-dropdown k-header form-dropdown ng-pristine ng-untouched ng-valid ng-not-empty"
+                                unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                aria-owns="mainView_listbox" aria-disabled="false" aria-readonly="false"
+                                aria-busy="false" aria-activedescendant="5e108fb5-c378-4427-a318-ad17a14b1499"
+                                style=""><span unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                                        unselectable="on" class="k-input ng-scope">15</span><span unselectable="on"
+                                        class="k-select"><span unselectable="on"
+                                            class="k-icon k-i-arrow-s">select</span></span></span><select id="mainView"
+                                    class="form-dropdown ng-pristine ng-untouched ng-valid ng-not-empty"
+                                    ng-model="pageSize" k-on-change="refresh()" k-data-source="pageSizes"
+                                    kendo-drop-down-list="" data-role="dropdownlist" style="display: none;">
+                                    <option value="? number:15 ?"></option>
+                                    <option value="15" selected="selected">15</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                </select></span></aside>
+                    </kv-table-filter>
+                    <div class="wrap-button-footer"><button kv-mobile="" type="button" class="kv2Btn">Hoàn tất</button>
+                    </div>
+                </section>
+                <section class="mainRight proRight tableRight ng-scope">
+                    <section class="mainWrap fll w100">
+                        <article class="headerContent header-filter">
+                            <div class="header-filter-search">
+                                <h1><a href="javascript:void(0);" class="mobileIcon" kv-mobile=""></a><span
+                                        class="ng-binding">Phòng/Bàn</span></h1>
+                            </div>
+                            <aside class="header-filter-buttons">
+                                <a class="btn btn-success text-light" data-toggle="modal" data-target="#group_desk"><i
+                                        class="far fa-plus"></i> <span class="text-btn ng-binding">Thêm nhóm</span>
+                                </a>
+                                <a class="btn btn-success text-light" data-toggle="modal" data-target="#desk"><i
+                                        class="far fa-plus"></i> <span class="text-btn ng-binding">Thêm
+                                        phòng/bàn</span>
+                                </a>
+                                <a ng-show="rights.canImport" href="javascript:void(0)" ng-click="import()"
+                                    class="btn btn-success kv2BtnImport"><i class="fas fa-file-import"></i> <span
+                                        class="text-btn ng-binding">Import</span></a> <a href="javascript:void(0)"
+                                    ng-disabled="customers.total()==0" ng-click="export()"
+                                    class="btn btn-success kv2BtnExport"><i class="fas fa-file-export"></i> <span
+                                        class="text-btn ng-binding">Xuất file</span></a>
+                            </aside>
+                        </article>
+
+                        <!-- Modal add Nhóm-->
+                        <div class="modal fade" id="group_desk" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true"
+                            style="background: rgba(45, 45, 50, 0.8);">
+                            <div class="modal-dialog" role="document" style="padding-top: 130px;">
+                                <div class="modal-content" style="font-weight: 600; border-radius: 9px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"
+                                            style="font-size: 18px; padding: 0;">Thêm
+                                            Nhóm</h5>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <form name="tableForm"
+                                            class="control-poup lbl-cl ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+                                            <div class="form-wrapper">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Tên Nhóm <span
+                                                            class="text-danger"
+                                                            style="font-size: 15px;">*</span></label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Ghi chú</label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="kv-window-footer"><a href="" class="btn btn-primary ng-binding"
+                                                    ng-click="save()" ng-disabled="saving"><i
+                                                        class="fas fa-save"></i>Lưu</a> <a ng-click="cancel()"
+                                                    class="btn btn-danger ng-binding text-light" data-dismiss="modal"><i
+                                                        class="far fa-ban"></i>Bỏ
+                                                    qua</a></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal add Phòng-->
+                        <div class="modal fade" id="desk" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true"
+                            style="background: rgba(45, 45, 50, 0.8);">
+                            <div class="modal-dialog" role="document" style="padding-top: 130px;">
+                                <div class="modal-content" style="font-weight: 600; border-radius: 9px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"
+                                            style="font-size: 18px; padding: 0;">Thêm
+                                            Phòng/Bàn</h5>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <form name="tableForm"
+                                            class="control-poup lbl-cl ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+                                            <div class="form-wrapper">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Tên
+                                                        phòng/bàn <span class="text-danger"
+                                                            style="font-size: 15px;">*</span></label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Nhóm</label>
+                                                    <div class="col-sm-9">
+                                                        <select id="inputState" class="form-control"
+                                                            style="height: auto;">
+                                                            <option selected disabled>------ Lựa chọn ------</option>
+                                                            <option>Phòng VIP</option>
+                                                            <option>Lầu 1</option>
+                                                            <option>Lầu 2</option>
+                                                            <option>Lầu 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Số thứ tự</label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Số ghế</label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Ghi chú</label>
+                                                    <div class="col-sm-9"><input type="text"
+                                                            class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                                            ng-model="table.Name" required=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="kv-window-footer"><a href="" class="btn btn-primary ng-binding"
+                                                    ng-click="save()" ng-disabled="saving"><i
+                                                        class="fas fa-save"></i>Lưu</a> <a ng-click="cancel()"
+                                                    class="btn btn-danger ng-binding text-light" data-dismiss="modal"><i
+                                                        class="far fa-ban"></i>Bỏ
+                                                    qua</a></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <article class="w100 fll k-gridNone table-page k-grid-Scroll">
+                            <div id="tables" kendo-grid="" k-options="tableDetails" k-sortable="true" k-resizable="true"
+                                k-pageable="{ &quot;pageSize&quot;: 10, &quot;refresh&quot;: false, &quot;pageSizes&quot;: false , buttonCount: 5,messages:{display:_l.pagerInfo + _l.table_Paging, first:_l.paging_First, previous:_l.paging_Prev, next: _l.paging_Next, last: _l.paging_Last}}"
+                                k-data-bound="emptyGridFix" kv-grid-expan-row="" data-title="table_Paging"
+                                data-role="grid" class="k-grid k-widget" style="">
+                                <div class="k-grid-header" style="padding-right: 8px;">
+                                    <div class="k-grid-header-wrap k-auto-scrollable" data-role="resizable"
+                                        style="touch-action: pan-y;">
+                                        <table role="grid">
+                                            <colgroup>
+                                                <col class="k-hierarchy-col">
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead role="rowgroup">
+                                                <tr role="row">
+                                                    <th class="k-hierarchy-cell k-header ng-scope" scope="col">&nbsp;
+                                                    </th>
+                                                    <th scope="col" role="columnheader" data-field="Name" rowspan="1"
+                                                        data-title="Tên phòng/bàn" data-index="0"
+                                                        id="7e1b3381-e6e4-4174-909f-df54ad2c4317"
+                                                        class="cell-name k-header ng-scope" data-role="columnsorter"><a
+                                                            class="k-link" href="#">Tên phòng/bàn</a></th>
+                                                    <th scope="col" role="columnheader" data-field="Description"
+                                                        rowspan="1" data-title="Ghi chú" data-index="1"
+                                                        id="f706a07a-8637-4bc6-831e-940af553fda4"
+                                                        class="cell-description k-header ng-scope"
+                                                        data-role="columnsorter"><a class="k-link" href="#">Ghi chú</a>
+                                                    </th>
+                                                    <th scope="col" role="columnheader" data-field="TableGroup.Name"
+                                                        rowspan="1" data-title="Nhóm" data-index="2"
+                                                        id="64baa468-c113-453c-81c6-a0676f43541e"
+                                                        class="cell-name-partner k-header ng-scope"
+                                                        data-role="columnsorter"><a class="k-link" href="#">Nhóm</a>
+                                                    </th>
+                                                    <th scope="col" role="columnheader" data-field="NumberSeat"
+                                                        rowspan="1" data-title="Số ghế" data-index="3"
+                                                        id="f900bb29-d24f-4831-91a8-a3e641020c52"
+                                                        class="cell-qty-numb k-header ng-scope"
+                                                        data-role="columnsorter"><a class="k-link" href="#">Số ghế</a>
+                                                    </th>
+                                                    <th scope="col" role="columnheader" data-field="IsActive"
+                                                        rowspan="1" data-title="Trạng thái" data-index="4"
+                                                        id="656bad89-e557-4814-b145-389e98ebfae5"
+                                                        class="cell-status k-header ng-scope" data-role="columnsorter">
+                                                        <a class="k-link" href="#">Trạng thái</a>
+                                                    </th>
+                                                    <th scope="col" role="columnheader" data-field="Position"
+                                                        rowspan="1" data-title="Số thứ tự" data-index="5"
+                                                        id="2c05862a-84ea-4d5f-b642-8c6bbd730249"
+                                                        class="cell-units k-header ng-scope" data-role="columnsorter"><a
+                                                            class="k-link" href="#">Số thứ tự</a></th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="k-grid-content k-auto-scrollable">
+                                    <table role="treegrid">
+                                        <colgroup>
+                                            <col class="k-hierarchy-col">
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody role="rowgroup">
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+                                            <tr class="k-master-row ng-scope"
+                                                data-uid="ab85fb25-ae6b-40fe-bdeb-b87226e38da9" role="row">
+                                                <td class="k-hierarchy-cell"><a class="k-icon k-plus" href="#"
+                                                        tabindex="-1"></a></td>
+                                                <td class="cell-name" role="gridcell"><span ng-bind="dataItem.Name"
+                                                        class="ng-binding">Bàn 20</span></td>
+                                                <td class="cell-description" role="gridcell"><span
+                                                        ng-bind="dataItem.Description" class="ng-binding"></span></td>
+                                                <td class="cell-name-partner" role="gridcell">
+                                                    <span>Lầu 3</span>
+                                                </td>
+                                                <td class="cell-qty-numb" role="gridcell"><span
+                                                        ng-bind="dataItem.NumberSeat" class="ng-binding"></span></td>
+                                                <td class="cell-status" role="gridcell">Đang hoạt động</td>
+                                                <td class="cell-units" role="gridcell"><span ng-bind="dataItem.Position"
+                                                        class="ng-binding">0</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="paging-box">
+                                    <div class="k-pager-wrap k-grid-pager k-widget k-floatwrap" data-role="pager"><a
+                                            href="#" title="Trang đầu"
+                                            class="k-link k-pager-nav k-pager-first k-state-disabled" data-page="1"
+                                            tabindex="-1"><span class="k-icon k-i-seek-w">Trang đầu</span></a><a
+                                            href="#" title="Trang trước" class="k-link k-pager-nav  k-state-disabled"
+                                            data-page="1" tabindex="-1"><span class="k-icon k-i-arrow-w">Trang
+                                                trước</span></a>
+                                        <ul class="k-pager-numbers k-reset">
+                                            <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
+                                            <li><span class="k-state-selected">1</span></li>
+                                            <li><a tabindex="-1" href="#" class="k-link" data-page="2">2</a></li>
+                                        </ul><a href="#" title="Trang sau" class="k-link k-pager-nav" data-page="2"
+                                            tabindex="-1"><span class="k-icon k-i-arrow-e">Trang sau</span></a><a
+                                            href="#" title="Trang cuối" class="k-link k-pager-nav k-pager-last"
+                                            data-page="2" tabindex="-1"><span class="k-icon k-i-seek-e">Trang
+                                                cuối</span></a><span class="k-pager-info k-label">Hiển thị 1 - 15 trên
+                                            tổng số 30 phòng/bàn</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <div style="display:none" class="ng-scope">
+                    <div ng-controller="TableFormCtrl" class="ng-scope"></div>
+                    <kv-table-room-import-popup kv-name="importTableAndRoomPopup" class="ng-isolate-scope">
+                    </kv-table-room-import-popup>
+                </div>
+            </section>
+        </section>
+        <div class="overlay" kv-mobile-left=""></div>
+        <kv-import-export-board class="ng-isolate-scope">
+            <div id="importExportNotificationBoard" ng-show="showImportExportBoard" class="notificationImpExp ng-hide">
+                <div class="notification">
+                    <div class="notificationImpExpBoardTitle"><span class="noti_title ng-binding">Xử lý import, xuất
+                            file</span> <span class="noti_action"><a href="javascript:void(0)" class="minmax"
+                                kv-notification=""><i class="fa fa-angle-down"></i></a> <a href="javascript:void(0)"
+                                class="expcomp" kv-notification=""><i class="kv-icon kv-expand"></i></a> <a
+                                href="javascript:void(0)" class="icon del dele"
+                                ng-click="closeImportExportBoard()"></a></span></div>
+                    <div id="importExportContent" class="notificationImpExpBoardContent uln">
+                        <ul>
+                            <!-- ngRepeat: item in allImportExportTask.Data -->
+                        </ul>
+                    </div>
+                    <div ng-show="!online" class="alert-messenger ng-binding ng-hide">Không có kết nối. Vui lòng kiểm
+                        tra lại.</div>
+                </div>
+            </div>
+        </kv-import-export-board>
+    </div>
+
+    <a id="toTop" rel="nofollow" title="Lên đầu trang" style="display: none;"><i class="fa fa-angle-up"></i></a>
+    <!-- ngIf: resolveSystemConfig && isShowRegisterGmb -->
+    <kv-info-popup ng-if="resolveSystemConfig &amp;&amp; isShowRegisterGmb" class="ng-scope ng-isolate-scope">
+        <!-- ngIf: isShowPopup && !noDisplayNextLogin -->
+    </kv-info-popup><!-- end ngIf: resolveSystemConfig && isShowRegisterGmb -->
+
+    <!--
+    <div class="popup2017">
+        <div class="overlay2017"></div>
+        <div class="pop2017-content">
+            <a href="javascript:void(0)" class="close2017"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="thong-bao">
+                <img src="~/Content/sale/default/img/people.png" class="people" />
+                <div class="header2017">
+                    <h5>KIOTVIET THÔNG BÁO</h5>
+                    <p>NÂNG CẤP GIAO DIỆN VÀ BỔ SUNG CÁC TIỆN ÍCH MỚI</p>
+                    <span class="bg"></span>
+                </div>
+                <div class="pop-content">
+                    <p>Ngày 26/5/2017, KiotViet sẽ tiến hành nâng cấp giao diện, trải nghiệm người dùng đồng thời bổ sung nhiều tiện ích mới cho các tính năng: <strong>KIỂM KHO, NHẬP HÀNG, TRẢ HÀNG NHẬP, CHUYỂN HÀNG, XUẤT HỦY HÀNG HÓA.</strong></p>
+                    <p>Để làm quen với giao diện, cách sử dụng và các tiện ích trong lần nâng cấp này, Quý khách vui lòng xem trước hình ảnh giao diện mới và hướng dẫn sử dụng  <a href="https://www.kiotviet.vn/huong-dan-su-dung-kiotviet/man-hinh-ban-hang/cap-nhat-man-hinh-ban-hang-moi/" target="_blank">TẠI ĐÂY.</a></p>
+                    <p><label class="quickaction_chk"><input type="checkbox" class="popcheck" /><span></span> Không hiển thị lại lần nữa</label></p>
+                    <div class="note">Chúng tôi luôn sẵn sàng hỗ trợ Quý khách tại Hotline: <strong>1900 6522</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        -->
+
+
+
+
+
+
+
+    <script type="text/javascript" defer="" async="" src="https://kv-analytics.kiotviet.vn/analytic.js"></script>
+    <div class="k-list-container k-popup k-group k-reset" id="cbSelectBranch-list" data-role="popup"
+        style="display: none; position: absolute;"><span class="k-list-filter"><input class="k-textbox" role="listbox"
+                aria-haspopup="true" aria-expanded="false" aria-owns="cbSelectBranch_listbox" tabindex="0"
+                aria-disabled="false" aria-readonly="false"
+                aria-activedescendant="5d6d883f-2df6-4279-9a16-bdd00fbb4c38"><span unselectable="on"
+                class="k-icon k-i-search">select</span></span>
+        <div class="k-group-header" style="display:none"></div>
+        <div class="k-list-scroller" unselectable="on">
+            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" id="cbSelectBranch_listbox"
+                aria-live="polite" data-role="staticlist" role="listbox">
+                <li tabindex="-1" role="option" unselectable="on"
+                    class="k-item ng-scope k-state-focused k-state-selected" data-offset-index="0"
+                    id="5d6d883f-2df6-4279-9a16-bdd00fbb4c38" aria-selected="true">Chi nhánh trung tâm</li>
+            </ul>
+        </div>
+    </div>
+    <div class="k-list-container k-popup k-group k-reset" id="cbIndustry-list" data-role="popup"
+        style="display: none; position: absolute;"><span class="k-list-filter"><input class="k-textbox" role="listbox"
+                aria-haspopup="true" aria-expanded="false" aria-owns="cbIndustry_listbox" tabindex="0"
+                aria-disabled="false" aria-readonly="false"><span unselectable="on"
+                class="k-icon k-i-search">select</span></span>
+        <div class="k-group-header" style="display:none"></div>
+        <div class="k-list-scroller" unselectable="on">
+            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" id="cbIndustry_listbox"
+                aria-live="polite" data-role="staticlist" role="listbox"></ul>
+        </div>
+    </div>
+    <div class="k-widget k-window" data-role="draggable"
+        style="padding-top: 62px; min-width: 90px; min-height: 50px; width: 520px; display: none; top: 40px; left: 0px; position: fixed; touch-action: pan-y;">
+        <div class="k-window-titlebar k-header" style="margin-top: -62px;">&nbsp;<span class="k-window-title"></span>
+            <div class="k-window-actions"><a role="button" href="#" class="k-window-action k-link"><span
+                        role="presentation" class="k-icon k-i-close">Close</span></a></div>
+        </div>
+        <div kendo-window="tableWindow" k-visible="false" k-resizable="false" k-draggable="true" k-pinned="true"
+            k-width="520" k-modal="true" data-role="window" class="k-window-content k-content" style="display: block;"
+            tabindex="0">
+            <kv-table-form form-name="tableForm" kv-width="520" class="ng-isolate-scope">
+                <form name="tableForm"
+                    class="control-poup lbl-cl ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+                    <div class="form-wrapper">
+                        <div class="form-group"><label class="form-label control-label req ng-binding">Tên
+                                phòng/bàn</label>
+                            <div class="form-wrap"><input type="text"
+                                    class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                    ng-model="table.Name" required=""></div>
+                        </div>
+                        <div class="form-group"><label class="form-label control-label ng-binding">Nhóm</label>
+                            <div class="form-wrap input-group"><span title=""
+                                    class="k-widget k-dropdown k-header form-control" unselectable="on" role="listbox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="3" aria-owns=""
+                                    aria-disabled="false" aria-readonly="false" aria-busy="false"
+                                    aria-activedescendant="f64f977a-70e4-4857-be0e-76a92614e2b7" style=""><span
+                                        unselectable="on" class="k-dropdown-wrap k-state-default"><span
+                                            unselectable="on" class="k-input ng-scope">------ Lựa chọn
+                                            ------</span><span unselectable="on" class="k-select"><span
+                                                unselectable="on"
+                                                class="k-icon k-i-arrow-s">select</span></span></span><select
+                                        kendo-drop-down-list="ddlSelectGroup" k-options="dropdownGroup"
+                                        k-ng-model="table.GroupId" class="form-control" data-role="dropdownlist"
+                                        style="display: none;">
+                                        <option value="0" selected="selected">------ Lựa chọn ------</option>
+                                        <option value="20820">Phòng VIP</option>
+                                        <option value="20821">Lầu 2</option>
+                                        <option value="20822">Lầu 3</option>
+                                    </select></span>
+                                <div class="input-group-append"><a ng-click="AddGroup(0)" href="javascript:void(0)"
+                                        class="btn-icon" title="Thêm nhóm"><i class="far fa-plus"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="form-label control-label ng-binding">Số thứ tự</label>
+                            <div class="form-wrap"><input type="text"
+                                    class="form-control text-right ng-pristine ng-untouched ng-valid ng-not-empty"
+                                    ng-model="table.Position" kv-auto-numeric="{mDec:0}" k-min="0"></div>
+                        </div>
+                        <div class="form-group"><label class="form-label control-label ng-binding">Số ghế</label>
+                            <div class="form-wrap"><input type="text"
+                                    class="form-control text-right ng-pristine ng-untouched ng-valid ng-empty"
+                                    ng-model="table.NumberSeat" kv-auto-numeric="{mDec:0}" k-min="0"></div>
+                        </div>
+                        <div class="form-group mb0"><label class="form-label control-label ng-binding">Ghi chú</label>
+                            <div class="form-wrap wrap-note"><textarea
+                                    class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"
+                                    ng-model="table.Description" maxlength="1000" kv-note=""
+                                    style="height: 0px; overflow: hidden;"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="kv-window-footer"><a href="" class="btn btn-success ng-binding" ng-click="save()"
+                            ng-disabled="saving"><i class="fas fa-save"></i>Lưu</a> <a ng-click="cancel()"
+                            class="btn btn-default ng-binding"><i class="far fa-ban"></i>Bỏ qua</a></div>
+                </form>
+                <div style="display:none">
+                    <kv-table-group-form kv-name="tableGroupForm" class="ng-isolate-scope">
+                        <div class="form-wrapper form-labels-90">
+                            <div class="form-group"><label class="form-label control-label req ng-binding">Tên
+                                    nhóm</label>
+                                <div class="form-wrap"><input type="text"
+                                        class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                                        ng-model="group.Name" required=""></div>
+                            </div>
+                            <div class="form-group mb0"><label class="form-label control-label ng-binding">Ghi
+                                    chú</label>
+                                <div class="form-wrap wrap-note"><textarea ng-model="group.Description"
+                                        class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"
+                                        maxlength="1000" kv-note="" style="height: 0px; overflow: hidden;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="kv-window-footer"><a href="" class="btn btn-success ng-binding"
+                                ng-click="saveGroup()" ng-show="canUpdate"><i class="fas fa-save"></i>Lưu</a> <a href=""
+                                class="btn btn-default ng-binding" ng-click="cancelGroup()"><i class="far fa-ban"></i>Bỏ
+                                qua</a> <a href="" class="btn btn-danger ng-binding ng-hide" ng-show="canDelete"
+                                ng-click="deleteGroup()"><i class="far fa-trash-alt"></i>Xóa</a></div>
+                    </kv-table-group-form>
+                </div>
+            </kv-table-form>
+        </div>
+    </div>
+    <div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;">
+        <div class="k-list-optionlabel ng-scope k-state-selected k-state-focused"
+            id="0a3590fc-d2b2-4e93-aa1b-fe60e6b60572">---Tất cả---</div>
+        <div class="k-group-header" style="display:none"></div>
+        <div class="k-list-scroller" unselectable="on">
+            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off"
+                data-role="staticlist" role="listbox">
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="0">Phòng
+                    VIP</li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="1">Lầu 2
+                </li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="2">Lầu 3
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="k-list-container k-popup k-group k-reset" id="mainView-list" data-role="popup"
+        style="display: none; position: absolute;">
+        <div class="k-group-header" style="display:none"></div>
+        <div class="k-list-scroller" unselectable="on">
+            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" id="mainView_listbox"
+                aria-live="off" data-role="staticlist" role="listbox">
+                <li tabindex="-1" role="option" unselectable="on"
+                    class="k-item ng-scope k-state-focused k-state-selected" data-offset-index="0"
+                    id="5e108fb5-c378-4427-a318-ad17a14b1499" aria-selected="true">15</li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="1">20</li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="2">30</li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="3">50</li>
+            </ul>
+        </div>
+    </div>
+    <div class="k-list-container k-popup k-group k-reset" data-role="popup" style="display: none; position: absolute;">
+        <div class="k-list-optionlabel ng-scope k-state-selected k-state-focused"
+            id="f64f977a-70e4-4857-be0e-76a92614e2b7">------ Lựa chọn ------</div>
+        <div class="k-group-header" style="display:none"></div>
+        <div class="k-list-scroller" unselectable="on">
+            <ul unselectable="on" class="k-list k-reset" tabindex="-1" aria-hidden="true" aria-live="off"
+                data-role="staticlist" role="listbox">
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="0">Phòng
+                    VIP</li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="1">Lầu 2
+                </li>
+                <li tabindex="-1" role="option" unselectable="on" class="k-item ng-scope" data-offset-index="2">Lầu 3
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="k-widget k-window" data-role="draggable"
+        style="padding-top: 62px; min-width: 90px; min-height: 50px; width: 550px; display: none; top: 40px; left: 0px; position: fixed; touch-action: pan-y;">
+        <div class="k-window-titlebar k-header" style="margin-top: -62px;">&nbsp;<span class="k-window-title"
+                id="importproductform_wnd_title">Nhập phòng/bàn từ file excel</span>
+            <div class="k-window-actions"><a role="button" href="#" class="k-window-action k-link"><span
+                        role="presentation" class="k-icon k-i-close">Close</span></a></div>
+        </div>
+        <div id="importproductform" kendo-window="importWindow" k-visible="false"
+            k-title="'Nhập phòng/bàn từ file excel'" k-resizable="false" k-draggable="true" k-pinned="true"
+            k-width="550" k-modal="true" k-close="onCloseImport" data-role="window" class="k-window-content k-content"
+            style="display: block;" tabindex="0" role="dialog" aria-labelledby="importproductform_wnd_title">
+            <div class="form-wrapper">
+                <div class="form-group ng-binding">Xử lý dữ liệu (Tải về File mẫu: <a
+                        href="/Template/MauFilePhongBan.xlsx" title="Download">Excel File</a>):</div>
+            </div>
+            <div class="kv-window-footer">
+                <div class="k-widget k-upload k-header k-upload-empty">
+                    <div class="k-dropzone">
+                        <div class="k-button k-upload-button"><input kendo-upload="" name="files" id="files" type="file"
+                                k-options="ImportFile" title="Chọn file dữ liệu" data-role="upload"
+                                autocomplete="off"><span>Chọn file dữ liệu</span></div><em>drop files here to
+                            upload</em>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-danger ng-binding" ng-bind-html="ImportError"></div>
+        </div>
+    </div>
+</body>
+
+</html>
