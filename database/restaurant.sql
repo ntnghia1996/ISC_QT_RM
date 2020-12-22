@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     18/12/2020 1:57:57 PM                        */
+/* Created on:     22/12/2020 1:34:09 PM                        */
 /*==============================================================*/
 
 
@@ -29,9 +29,9 @@ drop table if exists USERS;
 /*==============================================================*/
 create table BILLS
 (
-   BILL_ID              varchar(10) not null,
-   ID                   varchar(6) not null,
-   USER_ID              varchar(5) not null,
+   BILL_ID              int not null,
+   ID                   int not null,
+   USER_ID              int not null,
    CREATEDDATE          date,
    primary key (BILL_ID)
 );
@@ -41,9 +41,9 @@ create table BILLS
 /*==============================================================*/
 create table BILL_DETAILS
 (
-   BDETAIL_ID           varchar(11) not null,
-   BILL_ID              varchar(10) not null,
-   MENU_ID              varchar(5) not null,
+   BDETAIL_ID           int not null,
+   BILL_ID              int not null,
+   MENU_ID              int not null,
    AMOUNT               int,
    UNITPRICE            varchar(4),
    primary key (BDETAIL_ID)
@@ -54,8 +54,8 @@ create table BILL_DETAILS
 /*==============================================================*/
 create table DESKS_ROOMS
 (
-   ID                   varchar(6) not null,
-   GROUP_ID             varchar(5) not null,
+   ID                   int not null,
+   GROUP_ID             int not null,
    NAME                 varchar(15) not null,
    NOTE                 varchar(200),
    NUMBEROFSEATS        int not null,
@@ -68,7 +68,7 @@ create table DESKS_ROOMS
 /*==============================================================*/
 create table DESKS_ROOMS_GROUPS
 (
-   GROUP_ID             varchar(5) not null,
+   GROUP_ID             int not null,
    NAME                 varchar(15) not null,
    NOTE                 varchar(200),
    STATUS               tinyint not null,
@@ -80,8 +80,8 @@ create table DESKS_ROOMS_GROUPS
 /*==============================================================*/
 create table GUESTS
 (
-   GUEST_ID             varchar(8) not null,
-   BILL_ID              varchar(10) not null,
+   GUEST_ID             int not null,
+   BILL_ID              int not null,
    NAME                 varchar(15) not null,
    PHONE                varchar(15),
    primary key (GUEST_ID)
@@ -92,7 +92,7 @@ create table GUESTS
 /*==============================================================*/
 create table MATERIALS
 (
-   STORE_ID             varchar(5) not null,
+   STORE_ID             int not null,
    NAME                 varchar(15) not null,
    NUMBER               int not null,
    STATUS               tinyint not null,
@@ -105,7 +105,7 @@ create table MATERIALS
 /*==============================================================*/
 create table MENU
 (
-   MENU_ID              varchar(5) not null,
+   MENU_ID              int not null,
    NAME                 varchar(15) not null,
    PRICE                bigint not null,
    DECRIPTION           varchar(300),
@@ -120,9 +120,9 @@ create table MENU
 /*==============================================================*/
 create table MENU_MATERIALS
 (
-   MATERIAL_ID          varchar(6) not null,
-   MENU_ID              varchar(5) not null,
-   STORE_ID             varchar(5) not null,
+   MATERIAL_ID          int not null,
+   MENU_ID              int not null,
+   STORE_ID             int not null,
    NUMBER               int not null,
    primary key (MATERIAL_ID)
 );
@@ -132,8 +132,8 @@ create table MENU_MATERIALS
 /*==============================================================*/
 create table STAFFS
 (
-   STAFF_ID             varchar(5) not null,
-   USER_ID              varchar(5),
+   STAFF_ID             int not null,
+   USER_ID              int,
    NAME                 varchar(15) not null,
    SALARY               bigint not null,
    PHONE                varchar(15) not null,
@@ -146,8 +146,8 @@ create table STAFFS
 /*==============================================================*/
 create table USERS
 (
-   USER_ID              varchar(5) not null,
-   STAFF_ID             varchar(5) not null,
+   USER_ID              int not null,
+   STAFF_ID             int not null,
    USERNAME             varchar(30) not null,
    PASSWORD             varchar(30) not null,
    POSITION             int not null,
@@ -155,32 +155,32 @@ create table USERS
 );
 
 alter table BILLS add constraint FK_CREATED foreign key (USER_ID)
-      references USERS (USER_ID);
+      references USERS (USER_ID) on delete restrict on update restrict;
 
 alter table BILLS add constraint FK_FK_BILL_DESK foreign key (ID)
-      references DESKS_ROOMS (ID);
+      references DESKS_ROOMS (ID) on delete restrict on update restrict;
 
 alter table BILL_DETAILS add constraint FK_BELONGTO foreign key (MENU_ID)
-      references MENU (MENU_ID);
+      references MENU (MENU_ID) on delete restrict on update restrict;
 
 alter table BILL_DETAILS add constraint FK_FK_BILL_DETAIL foreign key (BILL_ID)
-      references BILLS (BILL_ID);
+      references BILLS (BILL_ID) on delete restrict on update restrict;
 
 alter table DESKS_ROOMS add constraint FK_IN foreign key (GROUP_ID)
-      references DESKS_ROOMS_GROUPS (GROUP_ID);
+      references DESKS_ROOMS_GROUPS (GROUP_ID) on delete restrict on update restrict;
 
 alter table GUESTS add constraint FK_PAY foreign key (BILL_ID)
-      references BILLS (BILL_ID);
+      references BILLS (BILL_ID) on delete restrict on update restrict;
 
 alter table MENU_MATERIALS add constraint FK_INCLUDE foreign key (MENU_ID)
-      references MENU (MENU_ID);
+      references MENU (MENU_ID) on delete restrict on update restrict;
 
 alter table MENU_MATERIALS add constraint FK_IS foreign key (STORE_ID)
-      references MATERIALS (STORE_ID);
+      references MATERIALS (STORE_ID) on delete restrict on update restrict;
 
 alter table STAFFS add constraint FK_HAS2 foreign key (USER_ID)
-      references USERS (USER_ID);
+      references USERS (USER_ID) on delete restrict on update restrict;
 
 alter table USERS add constraint FK_HAS foreign key (STAFF_ID)
-      references STAFFS (STAFF_ID);
+      references STAFFS (STAFF_ID) on delete restrict on update restrict;
 
